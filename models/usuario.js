@@ -17,7 +17,10 @@ var usuarioSchema = new Schema({
     email: { type: String, unique: true, required: [true, 'El correo es necesario'] },
     password: { type: String, required: [true, 'La contraseña es necesaria'] },
     img: { type: String, required: [false] },
-    role: { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos }
+    role: { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos },
+    google: { type: Boolean, default: false }
+    // si es true quiere decir que el user ya se autentico con google
+    // si es falso ese user no puede autenti, porque ya esta registrado
 
 });
 

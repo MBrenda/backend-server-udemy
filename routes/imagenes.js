@@ -1,3 +1,5 @@
+// 19. Crear una ruta para obtener imágenes
+
 var express = require('express');
 
 var app = express();
